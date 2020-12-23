@@ -1,0 +1,60 @@
+<%- include('./partials/header.ejs')%>
+<form action="/register" method="POST">
+  <div class="container mt-5">
+    <div class="mb-3 row">
+      <label for="staticName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control-plaintext"
+          id="staticName"
+          placeholder="Name"
+          name="name"
+          value=""
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input
+          type="email"
+          class="form-control-plaintext"
+          id="staticEmail"
+          placeholder="email"
+          value=""
+          name="email"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label"
+        >Password</label
+      >
+      <div class="col-sm-10">
+        <input
+          type="password"
+          class="form-control"
+          id="inputPassword"
+          name="password"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputConfirmPassword" class="col-sm-2 col-form-label"
+        >Confirm Password</label
+      >
+      <div class="col-sm-10">
+        <input
+          type="password"
+          class="form-control"
+          id="inputConfirmPassword"
+          name="confirmPassword"
+        />
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form>
+<%- include('./partials/footer.ejs')%>
