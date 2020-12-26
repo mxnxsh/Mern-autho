@@ -32,7 +32,6 @@ router.get('/logout', auth, async (req, res) => {
   req.user.tokens = []
 
   res.clearCookie('jwt');
-  console.log('Logout Successfully');
   await req.user.save();
   res.redirect('login');
 });
